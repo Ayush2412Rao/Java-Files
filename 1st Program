@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Ayush{
+    public static void main(String args[])
+    {
+        double a,b,c,x1,x2;
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a: ");
+        a=scan.nextDouble();
+        System.out.print("Enter b: ");
+        b=scan.nextDouble();
+        System.out.print("Enter c: ");
+        c=scan.nextDouble();
+
+        if(a==0)
+        {
+            System.out.println("a is 0,it can't make a quadratic equation:");
+        }
+        else
+        {
+            System.out.println("Now finding the zeros of the equation!! ");
+            double ans1 = Math.sqrt(b*b-4*a*c);
+            if(ans1>=0)
+            {
+                x1=(-b+ans1)/(2*a);
+                x2=(-b-ans1)/(2*a);
+                System.out.println("The zeros are "+x1+" and "+x2);
+            }
+            else
+            {
+                System.out.println("Discriminent is -ve which would give imaginary roots!!");
+            }
+
+        }
+    }
+}
