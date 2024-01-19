@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Hello3
+{
+    public static void main(String args[])
+    {
+        int year;
+        Scanner scan= new Scanner(System.in);
+        System.out.print("Enter the year: ");
+        year=scan.nextInt();
+
+        if((year%4==0)||(year%400==0)&&(year%100!=0))
+        {
+            System.out.println("It's a leap year!!");
+            int J1=31,M1=31,MA1=31,JUL1=31,Au1=31,O1=31,D1=31;
+            int feb1=29;
+            int A1=30,JU1=30,S1=30,N1=30;
+            System.out.println(("January: "+J1));
+            System.out.println(("February: "+feb1));
+            System.out.println(("March: "+M1));
+            System.out.println(("April: "+A1));
+            System.out.println(("May: "+MA1));
+            System.out.println(("June: "+JU1));
+            System.out.println(("July: "+JUL1));
+            System.out.println(("August: "+Au1));
+            System.out.println(("September: "+S1));
+            System.out.println(("October: "+O1));
+            System.out.println(("November: "+N1));
+            System.out.println(("December: "+D1));
+        }
+        else
+        {
+            System.out.println("It's not a leap year!!");
+            int J2=31,M2=31,MA2=31,JUL2=31,Au2=31,O2=31,D2=31;
+            int feb2=28;
+            int A2=30,JU2=30,S2=30,N2=30;
+            System.out.println(("January: "+J2));
+            System.out.println(("February: "+feb2));
+            System.out.println(("March: "+M2));
+            System.out.println(("April: "+A2));
+            System.out.println(("May: "+MA2));
+            System.out.println(("June: "+JU2));
+            System.out.println(("July: "+JUL2));
+            System.out.println(("August: "+Au2));
+            System.out.println(("September: "+S2));
+            System.out.println(("October: "+O2));
+            System.out.println(("November: "+N2));
+            System.out.println(("December: "+D2));
+        }
+    }
+}
